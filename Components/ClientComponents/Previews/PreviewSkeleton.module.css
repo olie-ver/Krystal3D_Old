@@ -1,0 +1,133 @@
+.PreviewDiv {
+  position: absolute;
+  top: -0.1vw;
+  background-color: var(--material-background);
+}
+
+.SlideSkeleton {
+  position: absolute;
+  top: 15vw;
+  left: 15vw;
+  width: 70vw;
+  height: 70vw;
+  border: 3px solid var(--banner-border);
+  background-color: var(--item-skeleton);
+}
+
+.ButtonBox {
+  position: absolute;
+  top: 90vw;
+  left: 15vw;
+  width: 70vw;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+    .PreviewDiv {
+        width: 100vw;
+        height: 65dvh;
+        border-bottom: 3px solid var(--banner-border);
+    }
+
+    .SlideSkeleton {
+        position: relative;
+        top: 15%;
+        left: 20vw;
+        width: 60vw;
+        height: 60vw;
+        max-height: 50dvh;
+    }
+
+    .ButtonBox {
+        position: relative;
+        top: 18%;
+        left: 20vw;
+        width: 60vw;
+        height: 2vw;
+        justify-content: space-around;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .PreviewDiv {
+        width: 100vw;
+        height: 65dvh;
+        border-bottom: 3px solid var(--banner-border);
+    }
+
+    .SlideSkeleton {
+        position: relative;
+        top: 15%;
+        left: 30vw;
+        width: 40vw;
+        height: 40vw;
+        max-height: 50dvh;
+    }
+
+    .ButtonBox {
+        position: relative;
+        top: 18%;
+        left: 30vw;
+        width: 40vw;
+        height: 2vw;
+        justify-content: space-around;
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .PreviewDiv {
+        width: 50vw;
+        height: 100vh;
+        border-bottom: none;
+        border-right: 3px solid var(--banner-border);
+    }
+
+    .SlideSkeleton {
+        position: relative;
+        top: 4vw;
+        left: 5vw;
+        width: 80%;
+        height: 40vw;
+    }
+
+    .ButtonBox {
+        position: relative;
+        display: flex;
+        top: 4.1vw;
+        left: 5vw;
+        width: 80%;
+        height: 2vw;
+        justify-content: space-around;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .PreviewDiv {
+        width: 50vw;
+        height: 100vh;
+        border-bottom: none;
+        border-right: 3px solid var(--banner-border);
+    }
+
+    .SlideSkeleton {
+        position: relative;
+        top: clamp(9dvh, 9dvh, 11dvh);
+        left: 5vw;
+        width: 80%;
+        height: 40vw;
+    }
+
+    .ButtonBox {
+        position: relative;
+        top: 9.1dvh;
+        left: 5vw;
+        width: 80%;
+        height: fit-content;
+        justify-content: space-around;
+    }
+}

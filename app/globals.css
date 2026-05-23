@@ -1,0 +1,172 @@
+@font-face {
+  font-family: "Tilt Prism";
+  src: url(../Fonts/TiltPrism-Regular-VariableFont_XROT,YROT.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Archivo";
+  src: url(../Fonts/Archivo_Expanded-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Zilla";
+  src: url(../Fonts/ZillaSlab-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Platypi";
+  src: url(../Fonts/Platypi/Platypi-VariableFont_wght.ttf) format("truetype");
+}
+
+/**
+background color
+banner colors
+settings/submenu colors
+text colors
+button colors
+*/
+
+:root {
+  --background-color: #E3EAF0;
+
+  --primary-banner: #FF00FF;
+  --banner-border: #890089;
+
+  --subMenu-color: #FFD7FF;
+  --subMenu-border: #890089;
+  --subMenu-bottom-border: #FF00FF;
+
+  --primary-text: #000000;
+  --secondary-text: #FF00FF;
+  --krystal-text: #FF00FF;
+
+  --button-color: #ffffff;
+  --material-background: #c8d0d8;
+
+  --item-background: #8c8c8c;
+  --item-skeleton: #464646;
+  --image-brightness: 1;
+}
+
+body.LightMode {
+  --background-color: #E3EAF0;
+
+  --primary-banner: #FF00FF;
+  --banner-border: #890089;
+
+  --subMenu-color: #FFD7FF;
+  --subMenu-border: #890089;
+  --subMenu-bottom-border: #FF00FF;
+
+  --primary-text: #000000;
+  --secondary-text: #FF00FF;
+  --krystal-text: #FF00FF;
+
+  --button-color: #ffffff;
+  --material-background: #c8d0d8;
+
+  --item-background: rgba(140, 140, 140, 0.6);
+  --item-skeleton: #AAAAAA;
+  --image-brightness: 1;
+}
+
+body.DarkMode {
+  --background-color: #252525;
+
+  --primary-banner: #e300e3;
+  --banner-border: #FFF8FF;
+
+  --subMenu-color: #252525;
+  --subMenu-border: #FFF8FF;
+  --subMenu-bottom-border: #FF00FF;
+
+  --primary-text: #E3EAF0;
+  --secondary-text: #FF00FF;
+  --krystal-text: #FF00FF;
+
+  --button-color: #ffffff;
+  --material-background: #535353;
+
+  --item-background: rgba(100, 100, 100, 0.6);
+  --item-skeleton: #8C8C8C;
+  --image-brightness: 1;
+}
+
+body.DarkerMode {
+  --background-color: #1d1d1d;
+
+  --primary-banner: #2a2a2a;
+  --banner-border: #000000;
+
+  --subMenu-color: #2a2a2a;
+  --subMenu-border: #000000;
+  --subMenu-bottom-border: #000000;
+
+  --primary-text: #E3EAF0;
+  --secondary-text: #000000;
+  --krystal-text: #FFFFFF;
+
+  --button-color: #282828;
+  --material-background: #2E2E2E;
+
+  --item-background: rgba(70, 70, 70, 0.6);
+  --item-skeleton: #464646;
+  --image-brightness: 0.75;
+}
+
+body.Midnight {
+  --background-color: #000000;
+
+  --primary-banner: #0e0e0e;
+  --banner-border: #131313;
+
+  --subMenu-color: #000000;
+  --subMenu-border: #131313;
+  --subMenu-bottom-border: #1c1c1c;
+
+  --primary-text: #1c1c1c;
+  --secondary-text: #1c1c1c;
+  --krystal-text: #1D1D1D;
+
+  --button-color: #0f0f0f;
+  --material-background: #000000;
+
+  --item-background: rgba(0, 0, 0, 0.6);
+  --item-skeleton: #0f0f0f;
+  --image-brightness: 0.25;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+model-viewer {
+  width: 100%;
+  height: 100%;
+  margin: 0, auto;
+}
+
+input[type="radio"]:hover {
+  cursor: pointer;
+}
+
+img {
+  filter: brightness(var(--image-brightness));
+}

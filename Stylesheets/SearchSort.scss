@@ -1,0 +1,31 @@
+::placeholder {
+    opacity: 0.7;
+    color: var(--primary-text);
+
+    @media only screen and (max-width: 3840px) and (min-width: 1025px) {
+        font-size: 1.2vw;
+    }
+}
+
+input {
+    font-size: 4vw;
+    color: white;
+
+    @media only screen and (max-width: 3840px) and (min-width: 1025px) {
+        font-size: 1.2vw;
+    }
+}
+
+#Search {
+    border-radius: 5vw;
+    border: 0.6vw solid var(--banner-border);
+    background-color: var(--subMenu-color);
+    padding-left: 1.5vw;
+    padding-top: 0.1vw;
+
+    @media only screen and (max-width: 3840px) and (min-width: 1025px) {
+        border-radius: 2vw;
+        border: 0.2vw solid var(--banner-border);
+        width: 25vw;
+    }
+}

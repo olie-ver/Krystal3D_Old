@@ -1,0 +1,78 @@
+.Logo {
+  position: relative;
+}
+
+.Krystal {
+  position: relative;
+  left: 2vw;
+}
+
+.KrystalTxt {
+  position: relative;
+  color: var(--krystal-text);
+  max-width: 25vw;
+  font-Family: "Tilt Prism";
+  font-size: clamp(1rem, 2.5rem, 2.5rem);
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+    .Logo {
+        top: clamp(4dvh, 10dvh, 6dvh);
+        height: 12dvh;
+        width: 12dvh;
+    }
+    .KrystalTxt {
+        top: 0.25rem;
+        left: 10dvh;
+        width: 40vw;
+        max-width: 42vw;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .Logo {
+        top: clamp(4dvh, 6dvh, 6dvh);
+        height: 12dvh;
+        width: 12dvh;
+    }
+    .KrystalTxt {
+        top: 0.5rem;
+        left: 10dvh;
+        width: 40vw;
+        max-width: 42vw;
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .Logo {
+        top: clamp(5dvh, 6dvh, 7dvh);
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .KrystalTxt {
+        top: 0;
+        left: 6.5vw;
+        width: 22vw;
+        max-width: 25vw;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .Logo {
+        top: clamp(4dvh, 5dvh, 8dvh);
+        height: 8vw;
+        width: 8vw;
+    }
+
+    .KrystalTxt {
+        margin-top: 5dvh;
+        left: 6.5vw;
+        width: 25vw;
+        max-width: 25vw;
+    }
+}

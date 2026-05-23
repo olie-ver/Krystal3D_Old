@@ -1,0 +1,115 @@
+.ContactForm {
+    position: relative;
+    left: 10vw;
+    height: fit-content;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10dvh;
+}
+
+.Form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.InputField {
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 3px solid var(--banner-border);
+    color: var(--primary-text);
+    margin-bottom: 3dvh;
+    font-size: 1.25rem;
+}
+
+.InputField:focus {
+    outline: none;
+}
+
+.Message {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 50dvh;
+    height: fit-content;
+    background: none;
+    border: 3px solid var(--banner-border);
+    font-size: 1rem;
+    color: var(--primary-text);
+    margin-bottom: 2dvh;
+}
+
+.Message:focus {
+    outline: none;
+}
+
+.Send {
+    cursor: pointer;
+    margin-left: 25%;
+    width: 50%;
+    background-color: var(--button-color);
+    border: 3px solid var(--banner-border);
+    font-family: "Platypi";
+    font-size: 2rem;
+    color: var(--primary-text);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 2rem;
+    transition: background-color 0.2s;
+}
+
+.Send:hover {
+    background-color: var(--material-background);
+}
+
+.Error {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: var(--primary-text);
+    font-family: "Platypi";
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+    .Form{
+        width: 100%;
+    }
+    .ContactForm {
+        top: 10dvh;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .Form{
+        width: 100%;
+    }
+
+    .ContactForm {
+        top: 10dvh;
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .Form{
+        width: 75%;
+    }
+
+    .ContactForm {
+        top: 5dvh;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .ContactForm {
+        top: 5dvh;
+    }
+}

@@ -1,0 +1,103 @@
+.ItemSkeleton {
+  position: static;
+  display: block;
+  border-radius: 1.3vw;
+  background-color: var(--item-skeleton);
+  cursor: pointer;
+}
+
+.SuggestionBanner, .SuggestionBannerSkeleton {
+  position: static;
+  gap: 6vw;
+  border-top: 3px solid var(--banner-border);
+  border-bottom: 3px solid var(--banner-border);
+  overflow: auto;
+  height: fit-content;
+  align-items: first baseline;
+  display: flex;
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+    .ItemSkeleton {
+        border-radius: 1.25rem;
+        width: clamp(6rem, 8rem, 10rem);
+        height: clamp(6rem, 8rem, 10rem);
+    }
+
+    .SuggestionBanner, .SuggestionBannerSkeleton {
+        position: relative;
+        width: 100vw;
+        height: fit-content;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .SuggestionBanner {
+        height: 12rem;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .ItemSkeleton {
+        border-radius: 1.25rem;
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .SuggestionBanner, .SuggestionBannerSkeleton {
+        position: relative;
+        width: 100vw;
+        height: fit-content;
+        padding-left: 4%;
+        gap: 2vw;
+    }
+
+    .SuggestionBanner {
+        height: 12rem;
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .ItemSkeleton {
+        border-radius: 1.25rem;
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .SuggestionBanner, .SuggestionBannerSkeleton {
+        position: relative;
+        top: -10dvh;
+        width: 100%;
+        height: fit-content;
+        padding-left: 4%;
+        gap: 2vw;
+    }
+
+    .SuggestionBanner {
+        height: 12rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .ItemSkeleton {
+        border-radius: 1.3vw;
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .SuggestionBanner, .SuggestionBannerSkeleton {
+        position: relative;
+        top: -10dvh;
+        width: 100%;
+        padding-left: 4%;
+        gap: 2vw;
+    }
+
+    .SuggestionBanner {
+        height: 12.5rem;
+    }
+}

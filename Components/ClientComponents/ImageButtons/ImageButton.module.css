@@ -1,0 +1,67 @@
+.Radio {
+    position: static;
+    display: none;
+}
+
+.Label, .Toggle2D3D {
+    position: static;
+    cursor: pointer;
+    background-color: none;
+    transition: background-color 0.3s;
+}
+
+.Label {
+    border: 2px solid gray;
+}
+
+.Label:hover {
+    background-color: gray;
+}
+
+.Radio:checked + .Label {
+    background-color: gray;
+}
+
+.Toggle2D3D {
+    border: 2px solid darkred;
+}
+
+.Toggle2D3D:hover {
+    background-color: darkred;
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+    .Label, .Toggle2D3D {
+        width: 4vw;
+        height: 4vw;
+        border-radius: 2vw;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .Label, .Toggle2D3D {
+        width: 3vw;
+        height: 3vw;
+        border-radius: 2vw;
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .Label, .Toggle2D3D {
+        width: 1.75vw;
+        height: 1.75vw;
+        border-radius: 2vw;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .Label, .Toggle2D3D {
+        width: 1.75vw;
+        height: 1.75vw;
+        border-radius: 2vw;
+    }
+}

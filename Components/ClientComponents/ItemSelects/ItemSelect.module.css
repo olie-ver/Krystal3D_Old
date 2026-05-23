@@ -1,0 +1,154 @@
+.MaterialContainer {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.ItemSelect {
+  position: relative;
+  left: 10vw;
+  width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1rem;
+  padding-bottom: 3vw;
+}
+
+.Select {
+  position: static;
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.Select:hover {
+  background-color: var(--item-skeleton);
+}
+
+.Item {
+    position: relative;
+    width: inherit;
+    height: inherit;
+    background-color: var(--item-background);
+    border: 3px solid var(--banner-border);
+    border-radius: inherit;
+}
+
+.Title {
+  position: absolute;
+  color: var(--primary-text);
+  font-size: 1.25rem;
+  text-align: center;
+  font-family: Archivo;
+}
+
+.Preview {
+  filter: brightness(var(--image-brightness));
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+    .MaterialContainer {
+        top: clamp(25dvh, 30dvh, 40dvh);
+    }
+
+    .ItemSelect {
+        gap: 3rem;
+        row-gap: 4.5rem;
+        justify-content: center;
+    }
+
+    .Select {
+        border-radius: 1.25rem;
+        width: clamp(6rem, 8rem, 10rem);
+        height: clamp(6rem, 8rem, 10rem);
+    }
+
+    .Title {
+        width: lamp(6rem, 6.5rem, 7rem);
+        max-width: clamp(6rem, 8rem, 10rem);
+        font-size: 1.1rem;
+        top: clamp(6rem, 8rem, 10rem);
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .MaterialContainer {
+        top: clamp(15dvh, 20dvh, 25dvh);
+    }
+
+    .ItemSelect {
+        gap: 2rem;
+        row-gap: 4.75rem;
+        justify-content: center;
+    }
+
+    .Select {
+        border-radius: 1.25rem;
+        width: 9rem;
+        height: 9rem;
+    }
+
+
+    .Title {
+        width: 8.7rem;
+        max-width: 9rem;
+        font-size: 1.15rem;
+        top: 9.1rem;
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .MaterialContainer {
+        top: clamp(4dvh, 5dvh, 6dvh);
+    }
+
+    .ItemSelect {
+        gap: 2.5rem;
+        row-gap: 5rem;
+    }
+
+    .Select {
+        border-radius: 1.25rem;
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .Title {
+        width: 9rem;
+        max-width: 9rem;
+        font-size: 1.15rem;
+        top: 9.5rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .MaterialContainer {
+    top: clamp(1dvh, 2dvh, 3dvh);
+  }
+
+  .ItemSelect {
+    gap: 3.5vw;
+    row-gap: 4.5rem;
+  }
+
+  .Select {
+    border-radius: 1.3vw;
+    width: 9rem;
+    height: 9rem;
+  }
+
+  .Title {
+    width: 9rem;
+    max-width: 9rem;
+    font-size: 1.15rem;
+    top: 9.5rem;
+  }
+}

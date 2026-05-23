@@ -1,0 +1,88 @@
+.DonationForm {
+    position: relative;
+    width: 50vw;
+    left: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.DonationAmount {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    font-size: 1.25rem;
+    background: none;
+    border: none;
+    color: var(--primary-text);
+    border-bottom: 3px solid var(--banner-border);
+}
+
+.DonationAmount:focus {
+    outline: none;
+}
+
+.CardInfo {
+    position: relative;
+    left: 25%;
+    width: 50%;
+    height: 5dvh;
+    margin-bottom: 5dvh;
+    border-bottom: 3px solid var(--banner-border);
+    color: var(--primary-text);
+}
+
+.Submit {
+    position:relative;
+    margin-top: 3dvh;
+    left: 25%;
+    width: 50%;
+    font-size: 1.25rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 2rem;
+    font-family: "Platypi";
+    color: var(--primary-text);
+    border: 3px solid var(--banner-border);
+    background-color: var(--button-color);
+    transition: background-color 0.2s;
+}
+
+.Submit:hover {
+    background-color: var(--material-background);
+}
+
+.StatusText {
+    color: var(--primary-text);
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+    .DonationForm {
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .DonationForm {
+        left: 0;
+        width: 100%;
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .DonationForm {
+        left: 12.5%;
+        width: 75%;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+}

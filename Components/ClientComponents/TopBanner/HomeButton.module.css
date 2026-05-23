@@ -1,0 +1,36 @@
+.Home {
+  position: absolute;
+  top: 0;
+  right: clamp(1vw, 1.6vw, 8vw);
+  width: clamp(3dvh, 7dvh, 10dvh);
+  height: clamp(3dvh, 7dvh, 10dvh);
+  cursor: pointer;
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+  .Home {
+    height: clamp(4dvh, 5dvh, 6dvh);
+  }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+  .Home {
+     height: clamp(4dvh, 5dvh, 6dvh);
+  }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .Home {
+    height: clamp(4dvh, 5dvh, 6dvh);
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .Home {
+    height: clamp(8dvh, 5dvh, 10dvh);
+  }
+}

@@ -1,0 +1,107 @@
+.Container {
+  top: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 0.25rem;
+  max-height: 100%;
+  padding-bottom: 1.5rem;
+}
+
+.Grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Button {
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+  background-color: var(--material-background);
+  border: 3px solid var(--banner-border);
+  cursor: pointer;
+  font-family: Zilla;
+  color: var(--primary-text);
+  transition: background-color 0.5s;
+}
+
+.ThreeButtons .Button:nth-child(3) {
+  grid-column: span 2;
+}
+
+.Button:hover {
+  background-color: var(--background-color);
+}
+
+.Active {
+  background-color: var(--background-color);
+}
+
+.Text {
+    font-size: 1rem;
+    margin-top: 0.25rem;
+    color: var(--primary-text);
+    font-family: Archivo;
+}
+
+.Link {
+    position: absolute;
+    top: 30%;
+    width: 18rem;
+    max-width: 50%;
+    right: 5%;
+    font-size: 1rem;
+    color: var(--primary-text);
+    font-family: Archivo;
+    text-align: center;
+}
+
+.MaterialLink {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+    font-size: 1.25rem;
+    color: var(--primary-text);
+    height: 4rem;
+    width: 18rem;
+    max-width: 50%;
+    font-family: Archivo;
+    background-color: var(--button-color);
+    border: 3px solid var(--banner-border);
+    border-radius: 1.5rem;
+    text-align: center;
+    align-content: center;
+    cursor: pointer;
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+  .Container {
+    padding-right: 18rem;
+  }
+
+  .Link {
+    top: 1.25rem;
+  }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+  .Link {
+    top: 20%;
+  }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .Link {
+    top: 20%;
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .Link {
+    top: 30%;
+    text-align: left;
+  }
+}

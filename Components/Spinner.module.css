@@ -1,0 +1,7 @@
+.Spinner {
+    position: relative;
+    color: var(--primary-text);
+    font-family: "Platypi";
+    font-size: 1.25rem;
+    text-align: center;
+}

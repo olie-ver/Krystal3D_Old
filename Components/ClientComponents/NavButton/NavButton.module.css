@@ -1,0 +1,100 @@
+.NavContainer {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.NavButton {
+  background-color: var(--background-color);
+  color: var(--primary-text);
+  text-decoration: none;
+  font-family: "Archivo";
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.5s, background-color 0.5s, border-color 0.5s;
+}
+
+.NavButton:hover {
+  background-color: var(--button-color);
+  color: var(--secondary-text);
+  border-color: var(--secondary-text);
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+    .NavContainer {
+        top: clamp(10dvh, 15dvh, 18dvh);
+        right: 22.5vw;
+        width: 55vw;
+        height: 3vw;
+        justify-content: space-around;
+        flex-wrap: none;
+    }
+
+    .NavButton {
+        width: clamp(10rem, 11rem, 12rem);
+        padding: clamp(0.5rem, 0.6rem, 0.75rem);
+        border: 2px solid transparent;
+        border-radius: clamp(1rem, 1.5rem, 2rem);
+        font-size: clamp(1rem, 1.25rem, 1.5rem);
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .NavContainer {
+        top: clamp(10dvh, 15dvh, 18dvh);
+        right: 22.5vw;
+        width: 55vw;
+        height: 3vw;
+        justify-content: space-around;
+        flex-wrap: none;
+    }
+
+    .NavButton {
+        width: clamp(10rem, 11rem, 12rem);
+        padding: clamp(0.5rem, 0.6rem, 0.75rem);
+        border: 2px solid transparent;
+        border-radius: 4vw;
+        font-size: clamp(1rem, 1.25rem, 1.5rem);
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .NavContainer {
+        top: clamp(8dvh, 9dvh, 10dvh);
+        right: 22.5vw;
+        width: 55vw;
+        height: 3vw;
+        justify-content: space-around;
+        flex-wrap: none;
+    }
+
+    .NavButton {
+        padding: clamp(0.5rem, 0.6rem, 0.75rem);
+        border: 2px solid transparent;
+        border-radius: 3vw;
+        font-size: clamp(1rem, 1.25rem, 1.5rem);
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .NavContainer {
+        top: clamp(8dvh, 9dvh, 10dvh);
+        right: 20vw;
+        width: 60vw;
+        height: 3vw;
+        justify-content: space-around;
+        flex-wrap: none;
+    }
+
+    .NavButton {
+        padding: clamp(0.5rem, 0.75rem, 1rem);
+        border: 0.15vw solid transparent;
+        border-radius: 3vw;
+        font-size: clamp(1rem, 1.25rem, 1.5rem);
+    }
+}

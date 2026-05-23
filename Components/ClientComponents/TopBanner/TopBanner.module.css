@@ -1,0 +1,36 @@
+.TopBanner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background-color: var(--primary-banner);
+  border-bottom: 3px solid var(--banner-border);
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+  .TopBanner {
+    height: clamp(4dvh, 6dvh, 6dvh);
+  }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+  .TopBanner {
+     height: clamp(4dvh, 6dvh, 6dvh);
+  }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .TopBanner {
+    height: clamp(4dvh, 6dvh, 6dvh);
+  }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+  .TopBanner {
+    height: clamp(8dvh, 5dvh, 10dvh);
+  }
+}

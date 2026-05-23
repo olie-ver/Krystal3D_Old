@@ -1,0 +1,266 @@
+.PreviewDetails {
+  position: absolute;
+  top: 100vw;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.TextHold {
+  position: static;
+  width: 100vw;
+  padding-bottom: 5vw;
+  display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+  color: var(--primary-text);
+  font-family: Zilla;
+  font-size: 10vw;
+  max-width: 100vw;
+}
+
+.MatName {
+    position: static;
+    padding-left: 5vw;
+    color: var(--primary-text);
+    font-family: Zilla;
+    font-size: 6vw;
+    max-width: 100vw;
+}
+
+.FileType {
+  position: static;
+  max-width: 100%;
+  font-family: Archivo;
+  font-size: 1.25rem;
+  text-align: center;
+  color: var(--primary-text);
+}
+
+.MatDownload {
+  position: static;
+  cursor: pointer;
+  border: 3px solid var(--banner-border);
+  font-family: Archivo;
+  color: var(--primary-text);
+  background-color: var(--material-background);
+  transition: background-color 0.5s;
+}
+
+.MatDownload:hover {
+  background-color: var(--background-color);
+}
+
+.License {
+  position: static;
+  text-align: center;
+  max-width: 100vw;
+  color: var(--primary-text);
+  font-family: Archivo;
+}
+
+.CC {
+  color: #00c2ee;
+}
+.CC:visited {
+  color: #00c2ee;
+}
+.CC:hover {
+  text-decoration: underline;
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+      .PreviewDetails {
+        top: clamp(50dvh, 65dvh, 65dvh);
+        right: 0;
+        width: 100vw;
+        max-height: 92dvh;
+        display: block;
+    }
+
+    .TextHold {
+        position: relative;
+        width: 100vw;
+        font-size: 3rem;
+        max-width: 100%;
+        text-align: center;;
+    }
+
+    .MatName {
+        position: relative;
+        top: 0dvh;
+        left: 4%;
+        padding-left: 0;
+        color: var(--primary-text);
+        font-family: Zilla;
+        font-size: 1.75rem;
+        max-width: 96%;
+    }
+
+    .MatDownload {
+        position: absolute;
+        margin-left: 29.5vw;
+        padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+        border-radius: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .License {
+        padding-top: 8dvh;
+        max-width: 100vw;
+        font-size: 1.25rem;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .PreviewDetails {
+        top: clamp(50dvh, 65dvh, 65dvh);
+        right: 0;
+        width: 100vw;
+        max-height: 92dvh;
+        display: block;
+    }
+
+    .TextHold {
+        position: relative;
+        width: 100vw;
+        font-size: 3rem;
+        max-width: 100%;
+    }
+
+    .MatName {
+        position: relative;
+        top: 0dvh;
+        left: 4%;
+        padding-left: 0;
+        color: var(--primary-text);
+        font-family: Zilla;
+        font-size: 1.75rem;
+        max-width: 96%;
+    }
+
+    .MatDownload {
+        position: absolute;
+        margin-left: 35vw;
+        padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+        border-radius: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .License {
+        padding-top: 8dvh;
+        max-width: 100vw;
+        font-size: 1.25rem;
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+  .PreviewDetails {
+        top: clamp(6dvh, 7dvh, 8dvh);
+        right: 0;
+        width: 50vw;
+        max-height: 92dvh;
+        display: block;
+    }
+
+    .TextHold {
+        position: relative;
+        width: 50vw;
+        font-size: 3rem;
+        max-width: 100%;
+    }
+
+    .MatName {
+        position: relative;
+        top: -10dvh;
+        left: 4%;
+        padding-left: 0;
+        color: var(--primary-text);
+        font-family: Zilla;
+        font-size: 1.5rem;
+        max-width: 96%;
+    }
+
+    .FileType {
+        position: absolute;
+        padding-left: 1vw;
+        top: 82dvh;
+        font-size: 1rem;
+        text-align: left;
+    }
+
+    .MatDownload {
+        position: absolute;
+        top: 85dvh;
+        left: 0.5vw;
+        padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+        border-radius: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .License {
+        position: absolute;
+        top: 87dvh;
+        right: 0vw;
+        padding-right: 1vw;
+        max-width: 30vw;
+        font-size: 1rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .PreviewDetails {
+        top: clamp(8dvh, 9dvh, 10dvh);
+        right: 0;
+        width: 50vw;
+        max-height: 92dvh;
+        display: block;
+    }
+
+    .TextHold {
+        position: relative;
+        width: 50vw;
+        font-size: 3rem;
+        max-width: 100%;
+    }
+
+    .MatName {
+        position: relative;
+        top: -10dvh;
+        left: 4%;
+        padding-left: 0;
+        color: var(--primary-text);
+        font-family: Zilla;
+        font-size: 1.5rem;
+        max-width: 50%;
+    }
+
+    .FileType {
+        position: absolute;
+        padding-left: 0.5vw;
+        top: 80dvh;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .MatDownload {
+        position: absolute;
+        top: 83dvh;
+        padding: 0.6rem 2.5rem 0.6rem 2.5rem;
+        border-radius: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .License {
+        position: absolute;
+        top: 87dvh;
+        right: 1vw;
+        padding-right: 1vw;
+        max-width: 35vw;
+        font-size: 1rem;
+    }
+}

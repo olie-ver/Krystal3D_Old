@@ -1,0 +1,87 @@
+.Container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Image {
+    object-fit: contain;
+    border: 3px solid var(--banner-border);
+}
+
+.SelfText {
+    text-align: center;
+    font-family: "Zilla";
+    color: var(--primary-text);
+}
+
+.Description {
+    text-align: center;
+    font-family: "Platypi";
+    max-width: 15vw;
+    color: var(--primary-text);
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+    .Container {
+        width: 40vw;
+        height: 50vw;
+    }
+
+    .SelfText {
+        max-width: 40vw;
+    }
+
+    .Description {
+        max-width: 40vw;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .Container {
+        width: 25vw;
+        height: 30vw;
+    }
+
+    .SelfText {
+        max-width: 25vw;
+    }
+
+    .Description {
+        max-width: 25vw;
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .Container {
+        width: 20vw;
+        height: 25vw;
+    }
+
+    .SelfText {
+        max-width: 20vw;
+    }
+
+    .Description {
+        max-width: 20vw;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .Container {
+        width: 15vw;
+        height: 20vw;
+    }
+
+    .SelfText {
+        max-width: 15vw;
+    }
+
+    .Description {
+        max-width: 15vw;
+    }
+}

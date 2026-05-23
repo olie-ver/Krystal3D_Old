@@ -1,0 +1,38 @@
+{
+  "name": "krystal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "15.1.8",
+    "@react-three/drei": "^9.122.0",
+    "@react-three/fiber": "^8.18.0",
+    "@stripe/react-stripe-js": "^3.7.0",
+    "@stripe/stripe-js": "^7.3.0",
+    "@supabase/supabase-js": "^2.49.8",
+    "@types/next": "^9.0.0",
+    "@types/nodemailer": "^6.4.17",
+    "autoprefixer": "^10.4.21",
+    "jszip": "^3.10.1",
+    "next": "^14.2.29",
+    "nodemailer": "^7.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "stripe": "^18.1.1",
+    "three": "^0.163.0"
+  },
+  "devDependencies": {
+    "@types/node": "22.0.0",
+    "@types/react": "^18.3.22",
+    "@types/react-dom": "^18.3.7",
+    "@types/three": "^0.176.0",
+    "eslint": "^8",
+    "eslint-config-next": "15.1.8",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,5 @@
+Figure out how to install React v.19 or higher w/ next canary to use PPR (Partial Pre Rendering)
+For now, just rejoice you got everything working again
+
+Move the downloads to Supabase so now I can just add things to Supabase and have everything working
+    rather than rebuilding every time I add something new

@@ -1,0 +1,54 @@
+.Text {
+    position: relative;
+    top: 10dvh;
+    left: 10vw;
+    width: 80vw;
+    font-family: "Platypi";
+    font-size: 1rem;
+    line-height: 2rem;
+    color: var(--primary-text);
+    margin-bottom: 20dvh;
+}
+
+.Container {
+    position: relative;
+    left: 10vw;
+    height: fit-content;
+    width: 80vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10dvh;
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+    .Text {
+        margin-bottom: 15dvh;
+    }
+
+    .Container {
+        top: 10dvh;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .Container {
+        top: 10dvh;
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .Container {
+        top: 5dvh;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .Container {
+        top: 5dvh;
+    }
+}

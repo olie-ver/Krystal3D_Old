@@ -1,0 +1,232 @@
+.GearBox {
+  position: fixed;
+  transition: transform 1s;
+}
+
+.Gear {
+  transition: transform 1s;
+}
+
+.GearCheck {
+  z-index: 9999;
+  position: fixed;
+  opacity: 0;
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.SetContainer {
+  position: fixed;
+  top: 0vh;
+  height: 100vh;
+  border-left: 4px solid var(--subMenu-border);
+  background-color: var(--subMenu-color);
+  transition: transform 1s;
+}
+
+.SettingMenu {
+  position: relative;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.Setting {
+  position: static;
+  width: inherit;
+  border-bottom: 3px solid var(--subMenu-bottom-border);
+  font-family: "Zilla";
+  color: var(--primary-text);
+  transition: color 0.4s;
+  cursor: pointer;
+}
+
+.Setting:hover {
+  color: var(--secondary-text);
+}
+
+.SubMenu {
+  position: static;
+  width: inherit;
+  background-color: var(--subMenu-color);
+  display: none;
+  flex-direction: inherit;
+  justify-content: inherit;
+}
+
+.Setting:checked ~ .SubMenu {
+  display: block;
+}
+
+.Mode {
+  border-bottom: 2px solid var(--subMenu-bottom-border);
+  font-family: "Zilla";
+  color: var(--primary-text);
+  text-align: left;
+  width: 100%;
+  cursor: pointer;
+  transition: color 0.4s;
+}
+
+.Mode:hover {
+  color: var(--secondary-text);
+}
+
+/* Phones */
+@media only screen and (max-width: 599px) {
+    .GearBox,
+    .GearCheck {
+        height: 5dvh;
+        width: 5dvh;
+        top: clamp(6vh, 7vh, 8vh);
+        right: 3vw;
+    }
+
+    .GearCheck:checked,
+    .GearCheck:checked ~ .GearBox {
+        transform: translateX(-23vw) rotate(360deg);
+    }
+
+    .SetContainer {
+      right: -38vw;
+      width: 38vw;
+    }
+
+    .GearCheck:checked ~ .SetContainer {
+      transform: translateX(-38vw);
+    }
+
+    .SettingMenu {
+      top: 15%;
+    }
+
+    .Setting {
+      font-size: clamp(1rem, 1.25rem, 1.5rem);
+      padding: 2dvh 0dvh 2dvh 2vw;
+    }
+
+    .Mode {
+      font-size: clamp(0.75rem, 1rem, 1.25rem);
+      padding-left: 3vw;
+    }
+}
+
+/* Tablets */
+@media (min-width: 600px) and (max-width: 899px) {
+    .GearBox,
+    .GearCheck {
+        height: 5dvh;
+        width: 5dvh;
+        top: clamp(6vh, 7vh, 8vh);
+        right: 2.5vw;
+    }
+
+    .GearCheck:checked,
+    .GearCheck:checked ~ .GearBox {
+        transform: translateX(-25vw) rotate(360deg);
+    }
+
+    .SetContainer {
+      right: -36vw;
+      width: 36vw;
+    }
+
+    .GearCheck:checked ~ .SetContainer {
+      transform: translateX(-36vw);
+    }
+
+    .SettingMenu {
+      top: 15%;
+    }
+
+    .Setting {
+      font-size: clamp(1rem, 1.5rem, 1.75rem);
+      padding: 3dvh 0dvh 3dvh 2vw;
+    }
+
+    .Mode {
+      font-size: clamp(1rem, 1.25rem, 1.5rem);
+      padding-left: 3vw;
+    }
+}
+
+/* Laptops */
+@media (min-width: 900px) and (max-width: 1199px) {
+    .GearBox,
+    .GearCheck {
+        height: 3.5vw;
+        width: 3.5vw;
+        top: clamp(6dvh, 7dvh, 8dvh);
+        right: 2.25vw;
+    }
+
+    .GearCheck:checked,
+    .GearCheck:checked ~ .GearBox {
+        transform: translateX(-14vw) rotate(360deg);
+    }
+
+    .SetContainer {
+      right: -22vw;
+      width: 22vw;
+    }
+
+    .GearCheck:checked ~ .SetContainer {
+      transform: translateX(-22vw);
+    }
+
+    .SettingMenu {
+      top: 15%;
+    }
+
+    .Setting {
+      font-size: clamp(1rem, 1.75rem, 2rem);
+      padding: 1.5vw 0vw 1.5vw 1.5vw;
+    }
+
+    .Mode {
+      font-size: clamp(1.25rem, 1.5rem, 1.75rem);
+      padding-left: 2vw;
+    }
+}
+
+/* Large screens */
+@media (min-width: 1200px) {
+    .GearBox,
+    .GearCheck {
+        height: 3.5vw;
+        width: 3.5vw;
+        top: clamp(9dvh, 10dvh, 11dvh);
+        right: 1.5vw;
+    }
+
+    .GearCheck:checked,
+    .GearCheck:checked ~ .GearBox {
+        transform: translateX(-14vw) rotate(360deg);
+    }
+
+    .SetContainer {
+      right: -22vw;
+      width: 22vw;
+    }
+
+    .GearCheck:checked ~ .SetContainer {
+      transform: translateX(-22vw);
+    }
+
+    .SettingMenu {
+      top: 25%;
+    }
+
+    .Setting {
+      font-size: clamp(1.5rem, 2rem, 2.5rem);
+      padding: 1vw 0vw 1vw 1.3vw;
+    }
+
+    .Mode {
+      font-size: clamp(1.25rem, 1.75rem, 2rem);
+      padding-left: 2vw;
+    }
+}
